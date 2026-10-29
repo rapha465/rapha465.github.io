@@ -9,12 +9,12 @@ on:
 jobs:
   saudacao: # nome da tarefa
   runs-on: ubuntu-latest # onde deve ser executado
- steps: # etapas
-    -name: Olá mundo cruel
-    run: echo "Olá mundo cruel"
-    -name: Resposta
-    run: echo "A extinção está chegando"
-    -name: Verificar se é humano
-    run : echo "qual a resposta de 2 + 2"
-    -name: Resposta do captcha
-    run: echo "$((2+ 2))"
+  steps: # etapas
+    - name: Olá mundo cruel
+      run: echo "Olá mundo cruel"
+   -name: Resposta
+      run: echo "A extinção está chegando"
+     -name: Verificar se é humano
+      run : echo "qual a resposta de 2 + 2"
+      -name: Resposta do captcha
+     run: echo "$((2+ 2))"
