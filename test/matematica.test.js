@@ -1,4 +1,4 @@
-const { somar, subtrair, multiplicar, dividir } = require('../js/matematica');
+const { somar, subtrair, multiplicar, dividir, potencia } = require('../js/matematica');
 
 describe('Operações matemáticas', () => {
   test('deve somar dois números', () => {
@@ -15,6 +15,10 @@ describe('Operações matemáticas', () => {
 
   test('deve dividir dois números', () => {
     expect(dividir(20, 5)).toBe(4);
+  });
+
+  test('deve calcular a potência de um número', () => {
+    expect(potencia(2, 3)).toBe(8);
   });
 
   test('deve lançar erro ao dividir por zero', () => {

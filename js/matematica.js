@@ -18,9 +18,14 @@ function dividir(a, b) {
   return a / b;
 }
 
+function potencia(base, expoente) {
+  return base ** expoente;
+}
+
 module.exports = {
   somar,
   subtrair,
   multiplicar,
   dividir,
+  potencia,
 };

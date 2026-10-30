@@ -3,18 +3,26 @@ name: Olá mundo cruel # nome da action
 # Gatilho, quando a action vai rodar
 on:
   push:
-    branches: ['main']
+    branches: [main]
 
 # Cria as tarefas que devem ser executadas
 jobs:
   saudacao: # nome da tarefa
-  runs-on: ubuntu-latest # onde deve ser executado
-  steps: # etapas
-    - name: Olá mundo cruel
-      run: echo "Olá mundo cruel"
-   -name: Resposta
-      run: echo "A extinção está chegando"
-     -name: Verificar se é humano
-      run : echo "qual a resposta de 2 + 2"
-      -name: Resposta do captcha
-     run: echo "$((2+ 2))"
+    runs-on: ubuntu-latest # onde deve ser executado
+    steps: # etapas
+      - name: Olá mundo cruel
+        run: echo "Olá mundo cruel"
+      - name: Resposta
+        run: echo "A extinção está chegando"
+      - name: Verificar se é humano
+        run: echo "qual a resposta de 2 + 2"
+      - name: Resposta do captcha
+        run: echo "$((2 + 2))"
+
+  adeus:
+    runs-on: ubuntu-latest
+    steps:
+      - name: O fim
+        run: echo "após uma tempestade solar, a humanidade virou churrasquinho"
+      - name: Nova era
+        run: echo "Uma nova raça animal começará a dominar o planeta"
