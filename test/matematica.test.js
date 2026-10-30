@@ -21,6 +21,10 @@ describe('Operações matemáticas', () => {
     expect(potencia(2, 3)).toBe(8);
   });
 
+  test('deve dividir o resultado de uma potência por um número', () => {
+    expect(dividir(potencia(2, 3), 2)).toBe(4);
+  });
+
   test('deve lançar erro ao dividir por zero', () => {
     expect(() => dividir(10, 0)).toThrow('Divisão por zero não é permitida');
   });
